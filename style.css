@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    direction: rtl;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.product-card {
+    margin: 20px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-card h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 16px;
+    color: #666;
+}
+
+.rating {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.star {
+    color: #FFD700;
+}
+
+.rating {
+    direction: ltr;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background-image: url(./images/black\ star.png);
+    background-size: cover;
+  }
+  
+  .rating input:checked ~ label {
+    background-image: url(./images/yellow\ star.png);
+  }
+
+  .product-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #151824;
+}
+
+  
+
+button {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
